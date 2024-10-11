@@ -1,0 +1,29 @@
+{
+	"folders":
+	[
+		{
+			"path": "../..",
+			"folder_exclude_patterns": [ ".git" ]
+		}
+	],
+    "settings":
+     {
+        "PyYapf":{
+         "yapf_command": "yapf",
+         "on_save": true,
+        },
+        "project_environment": {
+            "env": {
+                "PYTHON": "/home/sheffler/sw/MambaForge/envs/mlb/bin/python",
+            },
+        },
+
+    },
+	"build_systems": [
+        {
+            "name": "runtest.py",
+            "shell_cmd": "cd $folder && PYTHONPATH=../.. \\$PYTHON ide/runtests.py $file &> ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
+        },
+	],
+}

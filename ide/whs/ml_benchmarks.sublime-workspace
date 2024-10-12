@@ -1,1 +1,1878 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sg_sym",
+				"sg_symelem_frame444_opcompids_dict"
+			],
+			[
+				"sg_symele",
+				"sg_symelem_frame444_opids_dict"
+			],
+			[
+				"spacegroup_",
+				"spacegroup_deriveddata"
+			],
+			[
+				"input",
+				"input_O_cen"
+			],
+			[
+				"h",
+				"hnormalized"
+			],
+			[
+				"norm",
+				"normQ"
+			],
+			[
+				"roset",
+				"rosetta_atom_type_index"
+			],
+			[
+				"pymol",
+				"pymol_frame"
+			],
+			[
+				"will",
+				"willutil_cpp"
+			],
+			[
+				"test_pseudo",
+				"test_pseudo_t_env_min"
+			],
+			[
+				"lin",
+				"line_search_fn"
+			],
+			[
+				"can",
+				"candidates"
+			],
+			[
+				"make",
+				"makescore"
+			],
+			[
+				"thrand",
+				"thrand_xform"
+			],
+			[
+				"tow",
+				"towardscen"
+			],
+			[
+				"sym_onti",
+				"sym_onto_template_files"
+			],
+			[
+				"is",
+				"iscompound"
+			],
+			[
+				"qcp_ali",
+				"qcp_rms_align_float"
+			],
+			[
+				"check",
+				"check_isect"
+			],
+			[
+				"xyzno",
+				"xyznoise1"
+			],
+			[
+				"hrand",
+				"hrandpoint"
+			],
+			[
+				"cyc",
+				"cyclic_symbridge_rms"
+			],
+			[
+				"_debug",
+				"_degbug_symbridge_make_test_target"
+			],
+			[
+				"debug_sym",
+				"debug_symbridge_minfunc"
+			],
+			[
+				"test_rotat",
+				"test_rotation_point_match"
+			],
+			[
+				"haxis_an",
+				"haxis_ang_cen_of"
+			],
+			[
+				"haxis_ang",
+				"haxis_ang_cen_of"
+			],
+			[
+				"rotation",
+				"rotations_point_match"
+			],
+			[
+				"proj",
+				"hprojperp"
+			],
+			[
+				"spli",
+				"splitchains"
+			],
+			[
+				"remove",
+				"removeemtpy"
+			],
+			[
+				"remo",
+				"remove_emtpy"
+			],
+			[
+				"offset",
+				"offsetshape"
+			],
+			[
+				"motif_",
+				"motif_occlusion_dist"
+			],
+			[
+				"motif",
+				"motif_occlusion_dist"
+			],
+			[
+				"conta",
+				"contactdist"
+			],
+			[
+				"off",
+				"offsetshape"
+			],
+			[
+				"exis",
+				"exist_ok"
+			],
+			[
+				"test_",
+				"test_qcp_regions_junct"
+			],
+			[
+				"Row",
+				"RowMatrixX"
+			],
+			[
+				"test_q",
+				"test_qcp_regions"
+			],
+			[
+				"comp",
+				"compute_rms_offsets_brute"
+			],
+			[
+				"qcp",
+				"qcp_rms_regions_f4i4"
+			],
+			[
+				"unq",
+				"unsqueeze"
+			],
+			[
+				"R",
+				"RowMatrixX"
+			],
+			[
+				"hcon",
+				"hconstruct"
+			],
+			[
+				"qc",
+				"qcp_rmsd_rotation"
+			],
+			[
+				"lo",
+				"logical_and"
+			],
+			[
+				"un",
+				"unsqueeze"
+			],
+			[
+				"all",
+				"alldme2"
+			],
+			[
+				"th",
+				"th_rmsfit"
+			],
+			[
+				"def",
+				"deferred_import"
+			],
+			[
+				"fit",
+				"fit_only_junctions"
+			],
+			[
+				"apply",
+				"apply_motif_xyz"
+			],
+			[
+				"sym",
+				"symaxis"
+			],
+			[
+				"tpltc",
+				"tpltcrd"
+			],
+			[
+				"tp",
+				"tpltcomsym"
+			],
+			[
+				"temp",
+				"template_fit"
+			],
+			[
+				"tpl",
+				"tpltidx"
+			],
+			[
+				"appl",
+				"apply_sym_template"
+			],
+			[
+				"toun",
+				"tounitcell"
+			],
+			[
+				"check_",
+				"check_if_symelems_complete"
+			],
+			[
+				"onefi",
+				"oneiface"
+			],
+			[
+				"oneif",
+				"oneifacecompound"
+			],
+			[
+				"one",
+				"oneifacescrew"
+			],
+			[
+				"compu",
+				"_compute_symelems"
+			],
+			[
+				"best",
+				"bestbadiframes"
+			],
+			[
+				"uni",
+				"uniqaxisframes"
+			],
+			[
+				"line_li",
+				"line_line_closest_points_pa"
+			],
+			[
+				"seen",
+				"seene1line"
+			],
+			[
+				"line_",
+				"line_line_distance_pa"
+			],
+			[
+				"newel",
+				"newelems2"
+			],
+			[
+				"newe",
+				"newelems2"
+			],
+			[
+				"in",
+				"intersection"
+			],
+			[
+				"hax",
+				"haxis_angle_cen_hel_of"
+			],
+			[
+				"SYmE",
+				"SymElemAngErr"
+			],
+			[
+				"_pycm",
+				"_pick_symelemtags"
+			],
+			[
+				"_rem",
+				"_remove_redundant_screws"
+			],
+			[
+				"_pyc",
+				"_pick_best_related_symelems"
+			],
+			[
+				"test_axis_anhel",
+				"test_th_axis_angle_cen_hel"
+			],
+			[
+				"haxis",
+				"th_axis_angle_cen_hel"
+			],
+			[
+				"axis_an",
+				"axis_angle_cen_hel_of"
+			],
+			[
+				"test_scr",
+				"test_screw_elem_frames"
+			],
+			[
+				"axis",
+				"axis_angle_cen_hel_of"
+			],
+			[
+				"applyl",
+				"applylatticepts"
+			],
+			[
+				"spacegrou",
+				"spacegroup_util"
+			],
+			[
+				"hpoin",
+				"h_point_line_dist"
+			],
+			[
+				"_remove_red",
+				"_remove_redundant_screws"
+			],
+			[
+				"spa",
+				"spacegroup_canonical_name"
+			],
+			[
+				"chain",
+				"chainA_contacts_only"
+			],
+			[
+				"latti",
+				"lattice_vectors"
+			],
+			[
+				"Scre",
+				"ScrewError"
+			],
+			[
+				"Com",
+				"ComponentIDError"
+			],
+			[
+				"mat",
+				"matching_frames"
+			],
+			[
+				"latt",
+				"latticevec"
+			],
+			[
+				"unit",
+				"tounitcellpts"
+			],
+			[
+				"Ri",
+				"RigidBody"
+			],
+			[
+				"fn",
+				"fname_or_buf"
+			],
+			[
+				"dump",
+				"dump_pdbs"
+			],
+			[
+				"crd",
+				"crdref"
+			],
+			[
+				"test_spa",
+				"test_spacegroup_pymol"
+			],
+			[
+				"test_spac",
+				"test_spacegroup_symelems"
+			],
+			[
+				"test_mm",
+				"test_mmcif_write"
+			],
+			[
+				"test",
+				"test_data_path"
+			],
+			[
+				"hxf",
+				"hxformpts"
+			],
+			[
+				"_ma",
+				"_make_operator_component_joint_ids"
+			],
+			[
+				"frame_com",
+				"frame_component_ids_bycenter"
+			],
+			[
+				"Componen",
+				"ComponentIDError"
+			],
+			[
+				"_",
+				"_compute_symelems"
+			],
+			[
+				"ifra",
+				"iframematch0"
+			],
+			[
+				"isd",
+				"isdihedral"
+			],
+			[
+				"align",
+				"alignvectors"
+			],
+			[
+				"line",
+				"line_line_closest_points"
+			],
+			[
+				"find",
+				"_find_compound_symelems"
+			],
+			[
+				"haxisan",
+				"haxis_angle_cen_hel_of"
+			],
+			[
+				"cgo",
+				"make_cgo_only"
+			],
+			[
+				"line_line",
+				"line_line_closest_points_pa"
+			],
+			[
+				"frame_",
+				"frame_operator_ids"
+			],
+			[
+				"space",
+				"spacegroup_symelems"
+			],
+			[
+				"axsam",
+				"axsameneg"
+			],
+			[
+				"f",
+				"f5cel"
+			],
+			[
+				"com",
+				"compute_symelems"
+			],
+			[
+				"pick",
+				"_pick_symelemtags"
+			],
+			[
+				"Sc",
+				"ScrewError"
+			],
+			[
+				"_cube",
+				"_cube_edge_axis"
+			],
+			[
+				"lattice",
+				"cellgeom_from_lattice"
+			],
+			[
+				"frame",
+				"frameshape"
+			],
+			[
+				"lat",
+				"latticevec"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"undo",
+				"Sublundo: Visualize"
+			],
+			[
+				"origa",
+				"Preferences: Origami Settings"
+			],
+			[
+				"origamisett",
+				"Preferences: Origami Settings"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"add f",
+				"Project: Add Folder"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"canc",
+				"Build: Cancel"
+			],
+			[
+				"sav",
+				"File: Save All"
+			],
+			[
+				"ruf",
+				"Preferences: LSP-ruff Settings"
+			],
+			[
+				"ruff",
+				"Preferences: LSP-ruff Settings"
+			],
+			[
+				"Copil",
+				"Copilot: Get Panel Completions"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"Cop",
+				"Copilot: Sign In"
+			],
+			[
+				"copilot",
+				"Preferences: LSP-copilot Settings"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ui",
+				"UI: Select Color Scheme"
+			],
+			[
+				"proj",
+				"Project: Edit Project"
+			],
+			[
+				"crele",
+				"Origami: Create Pane on the Left"
+			],
+			[
+				"dest",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"clea",
+				"Bookmarks: Clear All"
+			],
+			[
+				"braek",
+				"Python Breakpoints: Toggle"
+			],
+			[
+				"can",
+				"Build: Cancel"
+			],
+			[
+				"save pro",
+				"Project: Save As"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"sort",
+				"SortBy: Alphabetically"
+			],
+			[
+				"uicol",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"cacn",
+				"Build: Cancel"
+			],
+			[
+				"crae",
+				"Origami: Create Pane with File Below"
+			],
+			[
+				"rn",
+				"Rename File"
+			],
+			[
+				"rena",
+				"Rename File"
+			],
+			[
+				"rename",
+				"Rename File"
+			],
+			[
+				"craepa",
+				"Origami: Create Pane Above"
+			],
+			[
+				"ky",
+				"Preferences: Key Bindings"
+			],
+			[
+				"pref",
+				"Preferences: Settings"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"cnc",
+				"ColorSchemeSelector: Next Color Scheme"
+			],
+			[
+				"fold",
+				"Code Folding: Fold All"
+			],
+			[
+				"ccanc",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"cahc",
+				"Package Control: Add Channel"
+			],
+			[
+				"dist",
+				"View: Toggle Distraction Free"
+			],
+			[
+				"zoom",
+				"Origami: Zoom/Unzoom Current Pane (Toggle Zoom)"
+			],
+			[
+				"creabel",
+				"Origami: Create Pane Below"
+			],
+			[
+				"soa",
+				"SortBy: Alphabetically"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"move",
+				"Origami: Move File to Pane on the Right"
+			],
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"craebelo",
+				"Origami: Create Pane Below"
+			],
+			[
+				"bel",
+				"Origami: Create Pane Below"
+			],
+			[
+				"crea",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"crerig",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"trarigh",
+				"Origami: Destroy Pane on the Right"
+			],
+			[
+				"creri",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"minim",
+				"View: Toggle Minimap"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"col",
+				"UI: Select Color Scheme"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"colorcomm",
+				"ColorSchemeSelector: Random Color Scheme"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"me",
+				"View: Toggle Menu"
+			],
+			[
+				"de",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"togg",
+				"View: Toggle Menu"
+			],
+			[
+				"cerri",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"detrc",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"sypy",
+				"Set Syntax: Python"
+			],
+			[
+				"cac",
+				"Build: Cancel"
+			],
+			[
+				"uis",
+				"UI: Select Color Scheme"
+			],
+			[
+				"uic",
+				"UI: Select Color Scheme"
+			],
+			[
+				"selecolo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"enstai",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"yap",
+				"PyYapf: Format Document"
+			],
+			[
+				"desp",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"for",
+				"Clang Format: Format Selection"
+			],
+			[
+				"ya",
+				"PyYapf: Format Document"
+			],
+			[
+				"runte",
+				"Terminus Utilities: Generate User Theme"
+			],
+			[
+				"buildwi",
+				"Build With: test_align_code"
+			],
+			[
+				"pyrigh",
+				"Preferences: LSP-pyright Settings"
+			],
+			[
+				"crebel",
+				"Origami: Create Pane Below"
+			],
+			[
+				"to",
+				"View: Toggle Menu"
+			],
+			[
+				"project",
+				"Project: Edit Project"
+			],
+			[
+				"unfo",
+				"Code Folding: Unfold All"
+			],
+			[
+				"remopa",
+				"Package Control: Remove Package"
+			],
+			[
+				"reopa",
+				"Package Control: Remove Package"
+			],
+			[
+				"settin",
+				"Preferences: Settings"
+			],
+			[
+				"synpy",
+				"Set Syntax: Python"
+			],
+			[
+				"synpay",
+				"Set Syntax: Python"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"removepa",
+				"Package Control: Remove Package"
+			],
+			[
+				"creatpab",
+				"Origami: Create Pane Below"
+			],
+			[
+				"crepa",
+				"Origami: Create Pane on the Left"
+			],
+			[
+				"create",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"destr",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"createpanlef",
+				"Origami: Create Pane on the Left"
+			],
+			[
+				"creab",
+				"Origami: Create Pane Below"
+			],
+			[
+				"distra",
+				"View: Toggle Distraction Free"
+			],
+			[
+				"creale",
+				"Origami: Create Pane on the Left"
+			],
+			[
+				"des",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"creat",
+				"Origami: Create Pane on the Left"
+			],
+			[
+				"destroy",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"createp",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"despr",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"creapa",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"creape",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"craeri",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"creari",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"creapari",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"creapanbel",
+				"Origami: Create Pane with File Below"
+			],
+			[
+				"craet",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"crepare",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"cre",
+				"Origami: Create Pane with File Below"
+			],
+			[
+				"desrpanle",
+				"Origami: Destroy Pane on the Left"
+			],
+			[
+				"despale",
+				"Origami: Destroy Pane on the Left"
+			],
+			[
+				"bui",
+				"Build: New Build System"
+			],
+			[
+				"createpale",
+				"Origami: Create Pane on the Left"
+			],
+			[
+				"despri",
+				"Origami: Destroy Pane on the Right"
+			],
+			[
+				"edi",
+				"Project: Edit Project"
+			],
+			[
+				"pro",
+				"Project: Edit Project"
+			],
+			[
+				"cer",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"inse",
+				"Insert Nums"
+			],
+			[
+				"ins",
+				"Insert Nums"
+			],
+			[
+				"cancel",
+				"Build: Cancel"
+			]
+		],
+		"width": 488.0
+	},
+	"console":
+	{
+		"height": 671.0,
+		"history":
+		[
+			"\n\nsublime.log_commands(False)\nsublime.log_commands(True)",
+			"\n\n\nsublime.log_commands(True)",
+			"print()\n",
+			"print()",
+			"clear",
+			"os.environ['PATH']",
+			"print(sys.version)",
+			"import os",
+			"print(sys.path)",
+			"print(sys.executable)",
+			"import sys",
+			"os.environ['PATH']",
+			"import os",
+			"sys.path",
+			"import sys",
+			"print(os.environ['PATH'])",
+			"import os",
+			"print(os.environ['PATH'])",
+			"import os",
+			"print(os.environ['PATH'])",
+			"import os",
+			"print(sys.executable)",
+			"print sys.executable",
+			"import sys"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/sheffler/mlb"
+	],
+	"file_history":
+	[
+		"/home/sheffler/willutil/willutil/tests/pdb/test_pdbfile.py",
+		"/home/sheffler/willutil/setup.py",
+		"/home/sheffler/willutil/willutil/sym/__init__.py",
+		"/home/sheffler/willutil/willutil/pdb/pdbfile.py",
+		"/home/sheffler/willutil/willutil/sym/asufit.py",
+		"/home/sheffler/willutil/README.md",
+		"/home/sheffler/willutil/willutil/sym/xtalcls.py",
+		"/home/sheffler/willutil/willutil/sym/spacegroup_deriveddata.py",
+		"/home/sheffler/willutil/.env.json",
+		"/home/sheffler/willutil/willutil/sym/sym.py",
+		"/home/sheffler/willutil/willutil/viz/viz_deco.py",
+		"/home/sheffler/willutil/willutil/viz/viz_bond.py",
+		"/home/sheffler/willutil/willutil/viz/pymol_viz.py",
+		"/home/sheffler/willutil/ide/willutil.sublime-project",
+		"/home/sheffler/willutil/willutil/sym/xtalinfo.py",
+		"/home/sheffler/willutil/willutil/app/sg.py",
+		"/home/sheffler/willutil/willutil/sym/SymElem.py",
+		"/home/sheffler/willutil/log/sublime_build.log",
+		"/home/sheffler/willutil/v2.py",
+		"/home/sheffler/willutil/contigs.py",
+		"/home/sheffler/willutil/data_loader.py",
+		"/home/sheffler/willutil/model_runners.py",
+		"/home/sheffler/willutil/loss.py",
+		"/home/sheffler/willutil/nucleic_compatibility_utils.py",
+		"/home/sheffler/willutil/features.py",
+		"/home/sheffler/willutil/conditioning.py",
+		"/home/sheffler/willutil/aa_model.py",
+		"/home/sheffler/willutil/willutil/timer.py",
+		"/home/sheffler/pymol3/sym_util.py",
+		"/home/sheffler/willutil/willutil/sym/spacegroup_data.py",
+		"/home/sheffler/willutil/willutil/app/spacegroup_diagram.py",
+		"/home/sheffler/willutil/willutil/tests/test_misc.py",
+		"/home/sheffler/willutil/willutil/tests/sym/test_sym.py",
+		"/home/sheffler/willutil/willutil/homog/thgeom.py",
+		"/home/sheffler/willutil/willutil/tests/sym/test_xtal.py",
+		"/home/sheffler/willutil/willutil/tests/sym/test_asufit.py",
+		"/home/sheffler/willutil/willutil/viz/viz_xtal.py",
+		"/home/sheffler/willutil/willutil/app/shunzhi_make_xtal.py",
+		"/home/sheffler/willutil/willutil/tests/sym/test_spacegroup_symelems.py",
+		"/home/sheffler/willutil/willutil/debug.py",
+		"/home/sheffler/willutil/willutil/__init__.py",
+		"/home/sheffler/willutil/willutil/misc.py",
+		"/home/sheffler/willutil/willutil/chem/chemical.py",
+		"/home/sheffler/willutil/willutil/storage.py",
+		"/home/sheffler/willutil/willutil/chem/__init__.py",
+		"/home/sheffler/willutil/willutil/chem/rotamer.py",
+		"/home/sheffler/willutil/willutil/tests/chem/test_rotamer.py",
+		"/home/sheffler/willutil/willutil/rigid/rigidbody.py",
+		"/home/sheffler/willutil/willutil/bunch.py",
+		"/home/sheffler/willutil/willutil/viz/plot.py",
+		"/home/sheffler/willutil/willutil/homog/hgeom.py",
+		"/home/sheffler/willutil/willutil/tests/homog/test_thgeom.py",
+		"/home/sheffler/willutil/willutil/viz/pymol_cgo.py",
+		"/home/sheffler/willutil/willutil/rosetta/notpose.py",
+		"/home/sheffler/willutil/willutil/tests/homog/test_homog.py",
+		"/home/sheffler/willutil/willutil/tests/motif/test_motif_placer.py",
+		"/home/sheffler/willutil/willutil/sym/spacegroup_symelems.py",
+		"/home/sheffler/willutil/willutil/viz/__init__.py",
+		"/home/sheffler/willutil/willutil/sym/permutations.py",
+		"/home/sheffler/willutil/willutil/motif/motif_placer.py",
+		"/home/sheffler/willutil/willutil/sym/pseudo_t.py",
+		"/home/sheffler/willutil/willutil/viz/viz_helix.py",
+		"/home/sheffler/willutil/willutil/viz/viz_rigidbody.py",
+		"/home/sheffler/willutil/willutil/viz/pymol_pose.py",
+		"/home/sheffler/willutil/willutil/unsym/viz_symscaffold.py",
+		"/home/sheffler/willutil/willutil/pdb/viz_pdb.py",
+		"/home/sheffler/willutil/willutil/tests/sym/test_helix.py",
+		"/home/sheffler/willutil/willutil/tests/sym/test_pseudo_t.py",
+		"/home/sheffler/willutil/setup.cfg",
+		"/home/sheffler/willutil/willutil/tests/sym/test_xtalfit.py",
+		"/home/sheffler/willutil/willutil/sym/spacegroup_contacts.py",
+		"/home/sheffler/willutil/willutil/sym/asugrid.py",
+		"/home/sheffler/willutil/willutil/search/slidedock.py",
+		"/home/sheffler/willutil/willutil/runtests.py",
+		"/home/sheffler/willutil/willutil/sym/symfit.py",
+		"/home/sheffler/willutil/willutil/testdata_management.py",
+		"/home/sheffler/willutil/requirements.txt",
+		"/home/sheffler/willutil/willutil/tests/pdb/test_mmcif.py",
+		"/home/sheffler/willutil/willutil/tests/testdata/testdata.py",
+		"/home/sheffler/willutil/willutil/tests/conftest.py",
+		"/home/sheffler/rpxdock/rpxdock/rpxdock/viz/deathstar_viz.py",
+		"/home/sheffler/rpxdock/rpxdock/rpxdock/rosetta/__init__.py",
+		"/home/sheffler/willutil/willutil/tests/sym/test_asuslide.py",
+		"/home/sheffler/willutil/.ruff.toml",
+		"/home/sheffler/willutil/willutil/tests/sym/test_permutations.py",
+		"/home/sheffler/willutil/willutil/tests/sym/test_diffusion_sym.py",
+		"/home/sheffler/willutil/willutil/data/pdb/meta/entries.txt.xz",
+		"/home/sheffler/willutil/willutil/data/pdb/meta/seqres.txt.xz",
+		"/home/sheffler/willutil/ide/sublime_build.log",
+		"/home/sheffler/src/willutil/willutil/homog/hgeom.py",
+		"/home/sheffler/src/willutil/willutil/sym/sym.py",
+		"/home/sheffler/src/willutil/willutil/__init__.py",
+		"/home/sheffler/src/willutil/willutil/homog/thgeom.py",
+		"/home/sheffler/src/willutil/willutil/tests/sym/test_pseudo_t.py",
+		"/home/sheffler/src/willutil/willutil/sym/pseudo_t.py",
+		"/home/sheffler/src/willutil/setup.py",
+		"/home/sheffler/src/willutil/setup.cfg",
+		"/home/sheffler/src/willutil/log/sublime_build.log",
+		"/home/sheffler/src/willutil/.github/workflows/test.yml",
+		"/home/sheffler/src/rfd_ci/.github/workflows/run_all_tests.yml",
+		"/home/sheffler/src/willutil/requirements.txt",
+		"/home/sheffler/src/willutil/willutil/viz/pymol_viz.py",
+		"/home/sheffler/src/willutil/willutil/storage.py",
+		"/home/sheffler/src/willutil/willutil/sym/pymol_xyzmath.py",
+		"/home/sheffler/src/willutil/willutil/sym/permutations.py",
+		"/home/sheffler/src/willutil/tmp.py",
+		"/home/sheffler/src/rfsym/rf2aa/sym/symmetry.py",
+		"/home/sheffler/src/willutil/willutil/sym/__init__.py",
+		"/home/sheffler/src/willutil/willutil/motif/motif_placer.py",
+		"/home/sheffler/src/willutil/willutil/sym/xtalfit.py",
+		"/home/sheffler/src/willutil/willutil/tests/motif/test_motif_placer.py",
+		"/home/sheffler/src/willutil/willutil/tests/homog/test_thgeom.py",
+		"/home/sheffler/src/willutil/willutil/tests/homog/test_homog.py",
+		"/home/sheffler/src/willutil/willutil/sym/spacegroup_symelems.py",
+		"/home/sheffler/src/willutil/willutil/data/pdb/meta/seqres.txt.xz",
+		"/home/sheffler/src/willutil/willutil/data/pdb/meta/entries.txt.xz",
+		"/home/sheffler/src/willutil/willutil/tests/sym/test_asuslide.py",
+		"/home/sheffler/src/willutil/willutil/sym/psuedo_t.py",
+		"/home/sheffler/src/willutil/willutil/sym/xtalcls.py",
+		"/home/sheffler/src/willutil/willutil/tests/sym/test_pseudo_t4.py",
+		"/home/sheffler/src/willutil/willutil/sym/t4.py",
+		"/home/sheffler/src/willutil/doc/spacegroup_covers_2elem.txt",
+		"/home/sheffler/for/db/symexample/symmetrize.py",
+		"/home/sheffler/src/willutil/willutil/app/makesym.py",
+		"/home/sheffler/src/rfd_clean/rf_diffusion/chemical.py",
+		"/home/sheffler/src/willutil/ide/willutil.sublime-project",
+		"/home/sheffler/src/willutil/willutil/sym/symfit.py",
+		"/home/sheffler/src/willutil/willutil/cpp/bvh/bvh.cpp"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 862.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": false,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 290.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.LSP Log Panel":
+	{
+		"height": 0.0
+	},
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.project_environment_log":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "test sg.py",
+	"project": "ml_benchmarks.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"symele",
+				"willutil/sym/SymElem.py"
+			],
+			[
+				"sg",
+				"willutil/app/sg.py"
+			],
+			[
+				"featu",
+				"features.py"
+			],
+			[
+				"nuc",
+				"nucleic_compatibility_utils.py"
+			],
+			[
+				"loss",
+				"loss.py"
+			],
+			[
+				"model",
+				"model_runners.py"
+			],
+			[
+				"data_load",
+				"data_loader.py"
+			],
+			[
+				"conti",
+				"contigs.py"
+			],
+			[
+				"v2",
+				"v2.py"
+			],
+			[
+				"condi",
+				"conditioning.py"
+			],
+			[
+				"aa_mo",
+				"aa_model.py"
+			],
+			[
+				"pymol",
+				"willutil/viz/pymol_viz.py"
+			],
+			[
+				"sym.py",
+				"willutil/sym/sym.py"
+			],
+			[
+				"xtalin",
+				"willutil/sym/xtalinfo.py"
+			],
+			[
+				"symelem",
+				"willutil/sym/SymElem.py"
+			],
+			[
+				"deri",
+				"willutil/sym/spacegroup_deriveddata.py"
+			],
+			[
+				"xtalcls",
+				"willutil/sym/xtalcls.py"
+			],
+			[
+				"README",
+				"README.md"
+			],
+			[
+				"",
+				"willutil/sym/spacegroup_data.py"
+			],
+			[
+				"spacegroup_data",
+				"willutil/sym/spacegroup_data.py"
+			],
+			[
+				"xtalcls.py",
+				"willutil/sym/xtalcls.py"
+			],
+			[
+				"pymolviz",
+				"willutil/viz/pymol_viz.py"
+			],
+			[
+				"sg.py",
+				"willutil/app/sg.py"
+			],
+			[
+				"sym.",
+				"willutil/sym/sym.py"
+			],
+			[
+				"pdbfile",
+				"willutil/pdb/pdbfile.py"
+			],
+			[
+				"asufi",
+				"willutil/sym/asufit.py"
+			],
+			[
+				"syminit",
+				"willutil/sym/__init__.py"
+			],
+			[
+				"setup",
+				"setup.py"
+			],
+			[
+				"timer",
+				"willutil/timer.py"
+			],
+			[
+				"test_pdbfi",
+				"willutil/tests/pdb/test_pdbfile.py"
+			],
+			[
+				"pdbfi",
+				"willutil/pdb/pdbfile.py"
+			],
+			[
+				"Xtal.py",
+				"willutil/sym/xtalcls.py"
+			],
+			[
+				"test_spa",
+				"willutil/tests/sym/test_spacegroup_symelems.py"
+			],
+			[
+				"viz_xt",
+				"willutil/viz/viz_xtal.py"
+			],
+			[
+				"vizxta",
+				"willutil/viz/viz_xtal.py"
+			],
+			[
+				"symelems",
+				"willutil/tests/sym/test_spacegroup_symelems.py"
+			],
+			[
+				"test_xt",
+				"willutil/tests/sym/test_xtal.py"
+			],
+			[
+				"thgeo",
+				"willutil/homog/thgeom.py"
+			],
+			[
+				"asufit",
+				"willutil/sym/asufit.py"
+			],
+			[
+				"test_asufi",
+				"willutil/tests/sym/test_asufit.py"
+			],
+			[
+				"test_sym.py",
+				"willutil/tests/sym/test_sym.py"
+			],
+			[
+				"test_",
+				"willutil/tests/test_misc.py"
+			],
+			[
+				"init",
+				"willutil/__init__.py"
+			],
+			[
+				"sym",
+				"willutil/sym/sym.py"
+			],
+			[
+				"test_thgeo",
+				"willutil/tests/homog/test_thgeom.py"
+			],
+			[
+				"pymol_vi",
+				"willutil/viz/pymol_viz.py"
+			],
+			[
+				"cgo",
+				"willutil/viz/pymol_cgo.py"
+			],
+			[
+				"hgeom",
+				"willutil/homog/hgeom.py"
+			],
+			[
+				"rotam",
+				"willutil/chem/rotamer.py"
+			],
+			[
+				"plot",
+				"willutil/viz/plot.py"
+			],
+			[
+				"test_homo",
+				"willutil/tests/homog/test_homog.py"
+			],
+			[
+				"testthgeo",
+				"willutil/tests/homog/test_thgeom.py"
+			],
+			[
+				"hgeo",
+				"willutil/homog/hgeom.py"
+			],
+			[
+				"buc",
+				"willutil/bunch.py"
+			],
+			[
+				"rigi",
+				"willutil/rigid/rigidbody.py"
+			],
+			[
+				"thgo",
+				"willutil/homog/thgeom.py"
+			],
+			[
+				"chemini",
+				"willutil/chem/__init__.py"
+			],
+			[
+				"stor",
+				"willutil/storage.py"
+			],
+			[
+				"bunch",
+				"willutil/bunch.py"
+			],
+			[
+				"che",
+				"willutil/chem/chemical.py"
+			],
+			[
+				"bun",
+				"willutil/bunch.py"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"NotPo",
+				"willutil/rosetta/notpose.py"
+			],
+			[
+				"vizde",
+				"willutil/viz/viz_deco.py"
+			],
+			[
+				"pymvi",
+				"willutil/viz/pymol_viz.py"
+			],
+			[
+				"pdbf",
+				"willutil/pdb/pdbfile.py"
+			],
+			[
+				"pseudo",
+				"willutil/sym/pseudo_t.py"
+			],
+			[
+				"thg",
+				"willutil/homog/thgeom.py"
+			],
+			[
+				"viz",
+				"willutil/viz/viz_deco.py"
+			],
+			[
+				"motif",
+				"willutil/motif/motif_placer.py"
+			],
+			[
+				"bond",
+				"willutil/viz/viz_bond.py"
+			],
+			[
+				"vizhel",
+				"willutil/viz/viz_helix.py"
+			],
+			[
+				"vizini",
+				"willutil/viz/__init__.py"
+			],
+			[
+				"setu",
+				"setup.py"
+			],
+			[
+				"vizri",
+				"willutil/viz/viz_rigidbody.py"
+			],
+			[
+				"vizx",
+				"willutil/viz/viz_xtal.py"
+			],
+			[
+				"pymlvi",
+				"willutil/viz/pymol_viz.py"
+			],
+			[
+				"set",
+				"setup.cfg"
+			],
+			[
+				"psu",
+				"willutil/sym/pseudo_t.py"
+			],
+			[
+				"testxtalp",
+				"willutil/tests/sym/test_xtalfit.py"
+			],
+			[
+				"testps",
+				"willutil/tests/sym/test_pseudo_t.py"
+			],
+			[
+				"xtalcl",
+				"willutil/sym/xtalcls.py"
+			],
+			[
+				"test_xtalf",
+				"willutil/tests/sym/test_xtalfit.py"
+			],
+			[
+				"testhel",
+				"willutil/tests/sym/test_helix.py"
+			],
+			[
+				"symel",
+				"willutil/sym/SymElem.py"
+			],
+			[
+				"spaceder",
+				"willutil/sym/spacegroup_deriveddata.py"
+			],
+			[
+				"test_psu",
+				"willutil/tests/sym/test_pseudo_t.py"
+			],
+			[
+				"confte",
+				"willutil/tests/conftest.py"
+			],
+			[
+				"test_hom",
+				"willutil/tests/homog/test_homog.py"
+			],
+			[
+				"test_mm",
+				"willutil/tests/pdb/test_mmcif.py"
+			],
+			[
+				"test_thg",
+				"willutil/tests/homog/test_thgeom.py"
+			],
+			[
+				"perm",
+				"willutil/sym/permutations.py"
+			],
+			[
+				"test_perm",
+				"willutil/tests/sym/test_permutations.py"
+			],
+			[
+				"testpseu",
+				"willutil/tests/sym/test_pseudo_t.py"
+			],
+			[
+				"ini",
+				"willutil/__init__.py"
+			],
+			[
+				"pseu",
+				"willutil/sym/pseudo_t.py"
+			],
+			[
+				"test_diff",
+				"willutil/tests/sym/test_diffusion_sym.py"
+			],
+			[
+				"hgeom.py",
+				"willutil/homog/hgeom.py"
+			],
+			[
+				"__init",
+				"willutil/__init__.py"
+			],
+			[
+				"willuini",
+				"willutil/__init__.py"
+			],
+			[
+				"test_th",
+				"willutil/tests/homog/test_thgeom.py"
+			],
+			[
+				"thge",
+				"willutil/homog/thgeom.py"
+			],
+			[
+				"rute",
+				"willutil/runtests.py"
+			],
+			[
+				"log/sub",
+				"log/sublime_build.log"
+			],
+			[
+				"subli",
+				"ide/sublime_build.log"
+			],
+			[
+				"stora",
+				"willutil/storage.py"
+			],
+			[
+				"hgo",
+				"willutil/homog/hgeom.py"
+			],
+			[
+				"xyzma",
+				"willutil/sym/pymol_xyzmath.py"
+			],
+			[
+				"pymv",
+				"willutil/viz/pymol_viz.py"
+			],
+			[
+				"test_pse",
+				"willutil/tests/sym/test_pseudo_t.py"
+			],
+			[
+				"permu",
+				"willutil/sym/permutations.py"
+			],
+			[
+				"xtal",
+				"willutil/sym/xtalcls.py"
+			],
+			[
+				"symini",
+				"willutil/sym/__init__.py"
+			],
+			[
+				"test pse",
+				"willutil/tests/sym/test_pseudo_t.py"
+			],
+			[
+				"pse",
+				"willutil/tests/sym/test_pseudo_t4.py"
+			],
+			[
+				"t4",
+				"willutil/sym/t4.py"
+			],
+			[
+				"make",
+				"willutil/app/makesym.py"
+			],
+			[
+				"place",
+				"willutil/motif/motif_placer.py"
+			],
+			[
+				"Montecar",
+				"willutil/search/montecarlo.py"
+			],
+			[
+				"test_space",
+				"willutil/tests/sym/test_spacegroup_contacts.py"
+			],
+			[
+				"test_motif",
+				"willutil/tests/motif/test_motif_placer.py"
+			],
+			[
+				"bvh",
+				"willutil/cpp/bvh/bvh.cpp"
+			],
+			[
+				"slide",
+				"willutil/search/slidedock.py"
+			],
+			[
+				"qcp.",
+				"willutil/cpp/rms/qcp.cpp"
+			],
+			[
+				"test_mot",
+				"willutil/tests/motif/test_motif_placer.py"
+			],
+			[
+				"qcp.hpp",
+				"willutil/cpp/rms/qcp.hpp"
+			],
+			[
+				"bvh.cpp",
+				"willutil/cpp/bvh/bvh.cpp"
+			],
+			[
+				"qcp",
+				"willutil/tests/cpp/rms/test_qcp.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 210.0,
+		"last_filter": "showme",
+		"selected_items":
+		[
+			[
+				"showme",
+				"showme"
+			],
+			[
+				"showmepy",
+				"showme_pymol"
+			]
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 323.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,6 +1,6 @@
-call: ['ide/runtests.py', '/home/sheffler/ml_benchmarks/mlb/tests/run/test_shell.py']
-cwd: /home/sheffler/ml_benchmarks
-cmd: PYTHONPATH=. /home/sheffler/sw/MambaForge/envs/mlb/bin/python mlb/tests/run/test_shell.py
-====================== ide/runtests.py running cmd in cwd ======================
-============================== main command done ===============================
-======================== runtests.py done, time   0.048 ========================
+Traceback (most recent call last):
+  File "/tmp/mlb/testenv/bin/mlbserver", line 5, in <module>
+    from mlb.backend.__main__ import main
+  File "/home/sheffler/mlb/mlb/__init__.py", line 2, in <module>
+    from mlb import backend, fileset, frontend, models, run, tests
+ImportError: cannot import name 'models' from partially initialized module 'mlb' (most likely due to a circular import) (/home/sheffler/mlb/mlb/__init__.py)

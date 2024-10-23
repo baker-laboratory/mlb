@@ -7,7 +7,7 @@ Traceback (most recent call last):
   File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 125, in dispatch
     testfile = testfile_of(projects, path, bname, **kw)
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 93, in testfile_of
-    pre, post = os.path.join(*spath[:i + 1]), os.path.join(*spath[i + 1:])
-                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: join() missing 1 required positional argument: 'a'
+  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 92, in testfile_of
+    assert i, f'no {proj} dir in {path}'
+           ^
+AssertionError: no mlb dir in mlb

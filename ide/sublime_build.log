@@ -1,6 +1,13 @@
 Traceback (most recent call last):
-  File "/tmp/mlb/testenv/bin/mlbserver", line 5, in <module>
-    from mlb.backend.__main__ import main
-  File "/home/sheffler/mlb/mlb/__init__.py", line 2, in <module>
-    from mlb import backend, fileset, frontend, models, run, tests
-ImportError: cannot import name 'models' from partially initialized module 'mlb' (most likely due to a circular import) (/home/sheffler/mlb/mlb/__init__.py)
+  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 158, in <module>
+    main(file_mappings=_file_mappings, overrides=_overrides, **args)
+  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 143, in main
+    cmd, post = dispatch(projects, kw['testfile'], **kw) if kw['testfile'] else (f'{sys.executable} -mpytest',
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 125, in dispatch
+    testfile = testfile_of(projects, path, bname, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 93, in testfile_of
+    pre, post = os.path.join(*spath[:i + 1]), os.path.join(*spath[i + 1:])
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: join() missing 1 required positional argument: 'a'

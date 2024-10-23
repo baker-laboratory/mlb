@@ -22,7 +22,12 @@
 	"build_systems": [
         {
             "name": "runtest.py",
-            "shell_cmd": "cd $folder && PYTHONPATH=../.. \\$PYTHON ide/runtests.py $file &> ide/sublime_build.log",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON lib/ipd/ipd/tools/run_tests_on_file.py mlb ipd $file &> ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
+        },
+        {
+            "name": "pytest",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -m pytest mlb/tests 2>&1 | tee ide/sublime_build.log",
             "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
         },
         {

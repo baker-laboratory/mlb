@@ -10,7 +10,7 @@ def mlb_test_stuff():
         server, backend, client = mlb.backend.server.run(
             port=54321,
             dburl=f'sqlite:////{tmpdir}/test.db',
-            woerkers=1,
+            workers=1,
             loglevel='warning',
         )
         mlb.backend.server.defaults.ensure_init_db(backend)
@@ -21,15 +21,15 @@ def mlb_test_stuff():
             server.stop()
 
 @pytest.fixture(scope='module')
-def mlb():
+def mlb_per_module():
     with mlb_test_stuff() as stuff:
         yield stuff
 
 @pytest.fixture(scope='function')
-def mlb_per_func(mlb):
-    mlb[0]._clear_all_data_for_testing_only()
-    mlb.backend.defaults.add_defaults()
-    return mlb
+def mlb_per_func(mlb_per_module):
+    mlb_per_module[0]._clear_all_data_for_testing_only()
+    mlb_per_module.backend.defaults.add_defaults()
+    return mlb_per_module
 
 @pytest.fixture(scope='function')
 def mlbbackend(mlb_per_func):

@@ -1,13 +1,41 @@
-Traceback (most recent call last):
-  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 158, in <module>
-    main(file_mappings=_file_mappings, overrides=_overrides, **args)
-  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 143, in main
-    cmd, post = dispatch(projects, kw['testfile'], **kw) if kw['testfile'] else (f'{sys.executable} -mpytest',
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 125, in dispatch
-    testfile = testfile_of(projects, path, bname, **kw)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/sheffler/mlb/lib/ipd/ipd/tools/run_tests_on_file.py", line 92, in testfile_of
-    assert i, f'no {proj} dir in {path}'
-           ^
-AssertionError: no mlb dir in mlb
+============================= test session starts ==============================
+platform linux -- Python 3.12.7, pytest-8.3.3, pluggy-1.5.0
+rootdir: /home/sheffler/mlb
+configfile: pyproject.toml
+plugins: repeat-0.9.2, hydra-core-1.3.2, hypothesis-6.115.3, anyio-4.6.0, xdist-3.6.1, sugar-1.0.0
+collected 2 items
+
+mlb/tests/backend/test_server.py E                                       [ 50%]
+mlb/tests/run/test_shell.py .                                            [100%]
+
+==================================== ERRORS ====================================
+_____________________ ERROR at setup of test_server_basic ______________________
+
+    @pytest.fixture(scope='module')
+    def mlb_per_module():
+>       with mlb_test_stuff() as stuff:
+
+mlb/tests/conftest.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @contextlib.contextmanager
+    def mlb_test_stuff():
+        with tempfile.TemporaryDirectory() as tmpdir:
+>           server, backend, client = mlb.backend.server.run(
+                port=54321,
+                dburl=f'sqlite:////{tmpdir}/test.db',
+                workers=1,
+                loglevel='warning',
+            )
+E           TypeError: cannot unpack non-iterable NoneType object
+
+mlb/tests/conftest.py:10: TypeError
+=============================== warnings summary ===============================
+../sw/MambaForge/envs/mlb/lib/python3.12/site-packages/pydantic/fields.py:826
+  /home/sheffler/sw/MambaForge/envs/mlb/lib/python3.12/site-packages/pydantic/fields.py:826: PydanticDeprecatedSince20: Using extra keyword arguments on `Field` is deprecated and will be removed. Use `json_schema_extra` instead. (Extra keys: 'descroption'). Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.9/migration/
+    warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR mlb/tests/backend/test_server.py::test_server_basic - TypeError: cannot...
+==================== 1 passed, 1 warning, 1 error in 0.32s =====================

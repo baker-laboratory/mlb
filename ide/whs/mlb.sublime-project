@@ -31,6 +31,11 @@
             "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
         },
         {
+            "name": "test import",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -c 'import mlb' 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
+        },
+        {
             "name": "test server",
             "shell_cmd": "sh $folder/ide/whs/test_server.sh 2>&1 | tee $folder/ide/sublime_build.log",
             "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",

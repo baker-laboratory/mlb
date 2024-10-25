@@ -1,5 +1,7 @@
+import mlb
+
 def main():
-    print('frontend')
+    mlb.MLBTool().run()
 
 if __name__ == '__main__':
     main()

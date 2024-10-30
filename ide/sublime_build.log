@@ -1,45 +1,9 @@
-<class 'mlb.specifications.UserSpec'>
-{
-    '__test__': True,
-    'id': UUID('31ce01c8-20a8-d685-e743-fc61590f4cbf'),
-    'ghost': False,
-    'datecreated': datetime.datetime(6039, 2, 5, 5, 46, 48, 462400, fold=1),
-    'name': 'č7㽮Y넉',
-    'fullname': ''
-}
-<class 'mlb.specifications.GroupSpec'>
-{
-    '__test__': True,
-    'id': UUID('cd51e06f-dd7c-6d7d-bd70-84377fe5b917'),
-    'ghost': False,
-    'datecreated': datetime.datetime(1083, 3, 30, 16, 40, 14, 476980),
-    'name': '㗡𧈷ÀŁPvŶDď𗪩t'
-}
-<class 'mlb.specifications.ExeSpec'>
-{
-    '__test__': True,
-    'id': UUID('e3e70682-c209-4cac-629f-6fbed82c07cd'),
-    'ghost': True,
-    'datecreated': datetime.datetime(3, 9, 23, 16, 51, 13),
-    'name': '𞠻0',
-    'user': UUID('f728b4fa-4248-5e3a-0a5d-2f346baa9455'),
-    'path': PosixPath('airflow_test_setup.py'),
-    'apptainer': True,
-    'version': ''
-}
-<class 'mlb.specifications.RepoSpec'>
-{
-    '__test__': True,
-    'id': UUID('9f81a6ea-4fc1-19c2-8682-1bb24f4de4ed'),
-    'ghost': True,
-    'datecreated': datetime.datetime(601, 8, 11, 7, 57, 59, 855792, fold=1),
-    'name': '𰱢ŢŔnÛ',
-    'user': UUID('42e26e68-103f-8919-1f69-e24bcaf0c68c'),
-    'url': 'https://github.com/baker-laboratory/ipd.git',
-    'ref': '1da9d0000000000'
-}
-test_UserSpec_create pass
-test_GroupSpec_create pass
-test_ExeSpec_create pass
-test_RepoSpec_create pass
-PASS
+backend.newuserz name='foo' id=UUID('4b8bab43-6b48-4507-88d2-58d9e8e7a1c7') someid=UUID('fed799f1-7635-40a6-b1eb-b79e750c48e3') fullname='' datecreated=datetime.datetime(2024, 10, 30, 1, 31, 48, 608888) number=0 ghost=False
+backend.newuserz name='bar' id=UUID('498e4000-ea4e-496b-bbf8-7c9ef211ee94') someid=UUID('7bd38e29-2200-400b-8671-333a31040d31') fullname='' datecreated=datetime.datetime(2024, 10, 30, 1, 31, 48, 615207) number=0 ghost=False
+backend.newuserz name='baz' id=UUID('82294e0c-1874-48ba-9d12-3358546bce9d') someid=UUID('48a2715f-9269-4b92-a3f1-665eab811a6a') fullname='' datecreated=datetime.datetime(2024, 10, 30, 1, 31, 48, 616914) number=0 ghost=False
+fullname foo bar baz <class 'str'>
+metadata id 129243343862192
+metadata id 129243342631376
+metadata id 129243343056976
+metadata id 129243332943632
+test_crud PASS

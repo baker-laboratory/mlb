@@ -4,4 +4,4 @@ from mlb import backend, frontend, tests
 from mlb.backend import MLBBackend
 from mlb.frontend import MLBClient, MLBTool
 
-projdir = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
+projdir = os.path.realpath(os.path.dirname(__file__))

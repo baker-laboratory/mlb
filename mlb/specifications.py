@@ -3,16 +3,17 @@ The *Spec classes here will be used as the basis the api layer of the server, ba
 '''
 import getpass
 import os
-import subprocess
-from enum import Enum
+import typing
 import uuid
+from enum import Enum
 
 # from token import CIRCUMFLEX
 import requests
-from pydantic import AnyUrl, DirectoryPath, Field, FilePath, field_validator, model_validator
+from pydantic import AnyUrl, BeforeValidator, DirectoryPath, Field, FilePath, field_validator, model_validator
 
 import ipd
-from ipd.crud import ModelRef as Ref, SpecBase, Unique, client_method
+from ipd.crud import ModelRef as Ref
+from ipd.crud import SpecBase, Unique, client_method
 
 def F(description: str, default=Field().default, **kw):
     assert isinstance(description, str)
@@ -88,13 +89,13 @@ class RepoSpec(SpecBase):
 class ConfigFilesSpec(SpecBase):
     '''a directory with files, represented as a local bare git repo'''
     user: Ref[UserSpec] = F('creator of this executable', getpass.getuser)
-    repo: DirectoryPath | None = F('path to the bare git repo on the server', None)
+    repo: DirectoryPath = F('path to the bare git repo on the server')
     ref: str = F('branch / hexsha... should almost always be main', 'main')
 
     @field_validator('repo')
     def check_valid_git(cls, repo):
-        reporoot = subprocess.run(["git", "rev-parse", "--show-toplevel"]).stdout
-        assert reporoot, f'repo {repo} is not a git repository'
+        reporoot = ipd.dev.run(f'cd {repo} && git rev-parse --show-toplevel')
+        assert reporoot, f'repo {reporoot} is not a git repository'
         return reporoot
 
     @client_method
@@ -119,8 +120,20 @@ class VarSpec(SpecBase):
     '''info about a variable provided by a Config/Method or input to a Method'''
     name: Unique[str] = F('name for this parameter, must be unique')
     kind: VarKind = F('type of this parameter', VarKind.FILES)
-    default: str | None = F('default value for this parameter', None)
-    files: Ref[FileSchemaSpec] = F('optional fileschema for this parameter', None)
+    default: str | None = F('default value for this var', None)
+    files: Ref[FileSchemaSpec] = F('optional fileschema for this var', None)
+
+#     # files: typing.Annotated[typing.Annotated[typing.Optional[typing.Union[uuid.UUID, str]],
+#     # BeforeValidator(lambda x: x)],
+#     # 'FileSchemaSpec'] = F('optional fileschema for this var', None)
+
+# # VarSpec.model_fields['files'].metadata = []
+# print(VarSpec.model_fields['files'].annotation)
+# print(VarSpec.model_fields['files'].metadata)
+# VarSpec(name='foo', files='foo')
+# VarSpec(name='foo', files=None)
+# VarSpec(name='foo', files=uuid.uuid4())
+# assert 0
 
 class ParamsSpec(SpecBase):
     '''spec for the inputs to a Method'''
@@ -144,8 +157,7 @@ class ConfigSpec(SpecBase):
     outvars: Ref[ResultSpec] = F('output labels/types')
 
 class MethodSpec(SpecBase):
-    '''
-    a basic comuptational unit. requires a config if can be protocol root,
+    '''a basic comuptational unit. requires a config if can be protoco,
     or just inschema if always follows another runnable. in and out schemas
     have names corresponding to required inputs / provided outputs
     '''
@@ -171,7 +183,7 @@ class ProtocolSpec(SpecBase):
     config: Ref[ConfigSpec] = F('config with input files and run info', None)
     params: Ref[ParamsSpec] = F('input labels/types', None)
     result: Ref[ResultSpec] = F('output labels/types')
-    methods: list[MethodSpec] = F('runnables to run in sequence. could be dag in future')
+    methods: list[MethodSpec] = F('runnables to run in sequence. could be dag in future', list)
 
     @model_validator(mode='before')
     def val_methods(cls, vals):

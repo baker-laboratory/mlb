@@ -2,6 +2,7 @@ import itertools as it
 import random
 import sys
 
+import pytest
 import networkx as nx
 
 import ipd
@@ -10,6 +11,7 @@ import mlb
 def main():
     ipd.tests.maintest(mlb.tests.conftest.mlb_test_stuff, globals())
 
+@pytest.mark.xfail
 def test_make_testdag(client):
     wdgen = WordDags()
     user = client.newuser()

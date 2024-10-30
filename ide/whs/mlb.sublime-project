@@ -46,8 +46,23 @@
             "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
         },
         {
+            "name": "test dag",
+            "shell_cmd": "cd $folder; PYTHONPATH=. \\$PYTHON mlb/tests/test_dag.py 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
+        },
+        {
             "name": "test cli",
             "shell_cmd": "sh $folder/ide/whs/test_cli.sh 2>&1 | tee $folder/ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
+        },
+        {
+            "name": "test crud",
+            "shell_cmd": "cd $folder/lib/ipd; PYTHONPATH=. \\$PYTHON ipd/tests/crud/test_crud.py 2>&1 | tee $folder/ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
+        },
+        {
+            "name": "test specs",
+            "shell_cmd": "cd $folder; PYTHONPATH=. \\$PYTHON mlb/tests/test_specifications.py 2>&1 | tee $folder/ide/sublime_build.log",
             "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
         },
 	],

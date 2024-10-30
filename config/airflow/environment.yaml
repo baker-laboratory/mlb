@@ -1,0 +1,9 @@
+name: airflow_test
+channels:
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+    - apache-airflow[pandas]
+    - git+https://github.com/baker-laboratory/ipd.git

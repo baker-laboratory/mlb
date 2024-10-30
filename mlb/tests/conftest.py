@@ -1,8 +1,8 @@
-import mlb
-import pytest
-import tempfile
-from fastapi.testclient import TestClient
 import contextlib
+import tempfile
+import pytest
+from fastapi.testclient import TestClient
+import mlb
 
 @contextlib.contextmanager
 def mlb_test_stuff():

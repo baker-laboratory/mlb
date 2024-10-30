@@ -1,36 +1,17 @@
+import asyncio
 import ipd
 import mlb
-import inspect
-import asyncio
-import traceback
-import pydantic
-from hypothesis import given, strategies as st
-from rich import print
 
 ar = asyncio.run
 
 def main():
-    from mlb.tests.conftest import mlb_test_stuff
-    with mlb_test_stuff() as (backend, server, client, testclient):
-        for fn in [f for n, f in globals().items() if n.startswith('test_')]:
-            backend._clear_all_data_for_testing_only()
-            print('=' * 20, fn, '=' * 20)
-            try:
-                args = {p: locals()[p] for p in inspect.signature(fn).parameters}
-                fn(**args)
-            except pydantic.ValidationError as e:
-                print(e)
-                print(e.errors())
-                print(traceback.format_exc())
-                break
-    print('PASS')
-    ipd.dev.global_timer.report()
+    ipd.tests.main(mlb.tests.conftest.mlb_test_stuff, globals())
 
-for Model in mlb.specs:
-
-    @given(st.builds(Model))
-    def test_property(instance):
-        pass
+# for Model in mlb.specs:
+#
+#     @given(st.builds(Model))
+#     def test_property(instance):
+#         pass
 
 def add_users_and_groups(tool):
     a = tool.newuser(name='alice')

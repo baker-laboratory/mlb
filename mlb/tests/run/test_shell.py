@@ -12,12 +12,12 @@ def test_bash():
     ASSERT(('foo\nbar\n', '', 0)).is_equal_to(ipd.dev.bash('echo foo && echo bar'))
     ASSERT((
         '',
-        '/bin/sh: line 1: wXyZ: command not found\n',
+        '/bin/sh: 1: wXyZ: not found\n',
         127,
     )).is_equal_to(ipd.dev.bash('wXyZ && echo bar'))
     ASSERT((
         'bar\n',
-        '/bin/sh: line 1: wXyZ: command not found\n',
+        '/bin/sh: 1: wXyZ: not found\n',
         0,
     )).is_equal_to(ipd.dev.bash('wXyZ; echo bar'))
 

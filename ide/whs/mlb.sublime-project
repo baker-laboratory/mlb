@@ -26,8 +26,18 @@
             "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
         },
         {
-            "name": "pytest",
+            "name": "pytest mlb",
             "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -m pytest mlb/tests 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
+        },
+        {
+            "name": "pytest ipd",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -m pytest lib/ipd/ipd/tests 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
+        },
+        {
+            "name": "pytest mlb ipd",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -m pytest mlb/tests lib/ipd/ipd/tests 2>&1 | tee ide/sublime_build.log",
             "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
         },
         {

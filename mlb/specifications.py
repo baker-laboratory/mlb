@@ -121,21 +121,10 @@ class VarSpec(SpecBase):
     name: Unique[str] = F('name for this parameter, must be unique')
     kind: VarKind = F('type of this parameter', VarKind.FILES)
     default: str | None = F('default value for this var', None)
+    immutable: bool = F('is this var immutable?', False)
     files: Ref[FileSchemaSpec] = F('optional fileschema for this var', None)
 
-#     # files: typing.Annotated[typing.Annotated[typing.Optional[typing.Union[uuid.UUID, str]],
-#     # BeforeValidator(lambda x: x)],
-#     # 'FileSchemaSpec'] = F('optional fileschema for this var', None)
-
-# # VarSpec.model_fields['files'].metadata = []
-# print(VarSpec.model_fields['files'].annotation)
-# print(VarSpec.model_fields['files'].metadata)
-# VarSpec(name='foo', files='foo')
-# VarSpec(name='foo', files=None)
-# VarSpec(name='foo', files=uuid.uuid4())
-# assert 0
-
-class ParamsSpec(SpecBase):
+class ParamSpec(SpecBase):
     '''spec for the inputs to a Method'''
     name: Unique[str] = F('name for this result, must be unique')
     user: Ref[UserSpec] = F('creator of this Param', getpass.getuser)
@@ -166,14 +155,14 @@ class MethodSpec(SpecBase):
     exe: Ref[ExeSpec] = F('executable that will run this Task')
     repo: Ref[RepoSpec] = F('repo that contains the run script/code to be run', None)
     config: Ref[ConfigSpec] = F('config with input files and run info', None)
-    params: Ref[ParamsSpec] = F('input labels/types', None)
+    param: Ref[ParamSpec] = F('input labels/types', None)
     result: Ref[ResultSpec] = F('output labels/types')
     gpus: str = F('does running this method require a gpu', '')
 
     @model_validator(mode='before')
     def val_in_or_config(cls, vals):
-        keys = ipd.dev.keyexists(vals, 'configid config paramsid params'.split())
-        assert any(keys), 'Method must have config or params'
+        keys = ipd.dev.keyexists(vals, 'configid config paramid param'.split())
+        assert any(keys), 'Method must have config or param'
         return vals
 
 class ProtocolSpec(SpecBase):
@@ -181,7 +170,7 @@ class ProtocolSpec(SpecBase):
     name: Unique[str] = F('name for this protocol, must be unique')
     user: Ref[UserSpec] = F('creator of this Protocol', getpass.getuser)
     config: Ref[ConfigSpec] = F('config with input files and run info', None)
-    params: Ref[ParamsSpec] = F('input labels/types', None)
+    param: Ref[ParamSpec] = F('input labels/types', None)
     result: Ref[ResultSpec] = F('output labels/types')
     methods: list[MethodSpec] = F('runnables to run in sequence. could be dag in future', list)
 

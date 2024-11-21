@@ -23,17 +23,6 @@ authors = [
   {name = 'Brian Coventry'},
   {name = 'Rohith Krishna'},
 ]
-maintainers = [
-  {name = 'Will Sheffler', email = 'willsheffler@gmail.com'},                         
-]
-description = 'Benchmarks and task automation for ipd software'
-# readme = 'README.md'
-# license = {file = 'LICENSE.txt'}
-keywords = []
-classifiers = [
-  'Development Status :: 4 - Beta',
-  'Programming Language :: Python'
-]
 
 [project.urls]
 Repository = 'https://github.com/baker-laboratory/ml_benchmark'
@@ -52,12 +41,10 @@ defineConstant = { DEBUG = true }
 typeCheckingMode = "basic"
 reportMissingImports = true
 reportMissingTypeStubs = false
+reportOverlappingOverload = false
 pythonPlatform = "Linux"
 requires-python = ">=3.11"
 pythonVersion = "3.12"
-executionEnvironments = [
-  { root = "/home/sheffler/sw/MambaForge/envs/pyright/bin/python", pythonVersion = "3.12", pythonPlatform = "Linux", extraPaths = [] },
-]
 
 [tool.ruff]
 lint.ignore = [
@@ -81,11 +68,12 @@ format.docstring-code-format = true
 [tool.pytest.ini_options]
 minversion = 6.0
 pythonpath = '.'
+addopts = '-m "not ci" --disable-warnings'
 testpaths = ['mlb/tests']
 markers = [
     'slow: marks tests as slow (deselect with -m "not slow")',
     'fast: tests that run in a second or two',
-    'noparallel: tests teat cant run in parallel',
+    'ci: tests to only run in ci',
 ]
 
 [tool.yapf]
@@ -94,3 +82,4 @@ indent_width = 4
 column_limit = 111
 blank_line_before_nested_class_or_def = false
 blank_lines_around_top_level_definition = 1
+arithmetic_precedence_indication = true

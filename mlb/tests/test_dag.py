@@ -3,7 +3,6 @@ import random
 import sys
 
 import networkx as nx
-import pytest
 
 import ipd
 import mlb
@@ -11,8 +10,28 @@ import mlb
 def main():
     ipd.tests.maintest(mlb.tests.conftest.mlb_test_stuff, globals())
 
-@ipd.dev.timed
-def test_make_testdag(client, backend):
+def test_single_command(client):
+    user = client.newuser()
+    proto = client.newprotocol(
+        name='simple',
+        param=client.newparam(name='proto_input',
+                              invars=[client.getornewvar(name=s, kind='str') for s in ['in']]),
+        result=client.newresult(name='final_result',
+                                outvars=[client.getornewvar(name=s, kind='str') for s in ['out']]),
+        methods=[
+            client.newmethod(
+                name='method',
+                exe=client.getornewexe(name='bash', path='/bin/bash'),
+                param=client.newparam(name='meth_input',
+                                      invars=[client.getornewvar(name=s, kind='str') for s in ['in']]),
+                result=client.newresult(name='methodresult',
+                                        outvars=[client.getornewvar(name=s, kind='str') for s in ['out']]))
+        ])
+
+    proto.print_compact()
+
+@mlb.profiler
+def _test_make_words_testdag(client, backend):
     wdgen = WordDags()
     user = client.newuser()
     exe = client.newexe(name='pyexe', path=sys.executable, apptainer=False, version=str(sys.version))
@@ -24,10 +43,10 @@ def test_make_testdag(client, backend):
         # assert 0
         wdgen.dag_to_tasks(client, wd, tag=i)
 
-@ipd.dev.timed
+@mlb.profiler
 class WordDags:
     def __init__(self):
-        self.words = ipd.dev.run('grep -v \\\' /usr/share/dict/words').split('\n')
+        self.words = ipd.dev.run('grep -v \\\' /usr/share/dict/words|shuf|head -n1000').split('\n')
         self.words = [w for w in self.words if not w.istitle()]
 
     def rand_dag(self, client, nnodes=7, edges='sorted', efrac=10.5):

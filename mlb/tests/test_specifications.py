@@ -8,31 +8,10 @@ from rich import print
 import ipd
 import mlb
 
-class MLBStrats(ipd.dev.testing.PydanticStrats):
-    def __init__(self):
-        super().__init__(
-            overrides={
-                '*.name': st.text().filter(str.isidentifier),
-                '*.ref': st.integers().map(hex).map(lambda s: s[2:]),
-                'ConfigFilesSpec.repo': st.sampled_from(['mlb', 'ide']).map(Path),
-            },
-            type_mapping={
-                mlb.ParseKind: st.sampled_from(mlb.ParseKind),
-                mlb.VarKind: st.sampled_from(mlb.VarKind),
-            },
-        )
-
-    def postprocess_moodel_strategy(self, Model, strat):
-        if Model.modelkind() == 'method':
-            return strat.filter(lambda d: d['config'] or d['params'])
-        return strat
-
-mlbstrats = MLBStrats()
-
 for Spec in mlb.specs:
 
     # print(Spec)
-    strat = mlbstrats(Spec)
+    strat = mlb.tests.mlbstrats(Spec)
 
     # sys.ps1 = 'foo'
     # print(strat.example())

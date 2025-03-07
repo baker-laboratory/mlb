@@ -1,0 +1,84 @@
+{
+    "folders":
+    [
+        {
+            "path": "../..",
+            "folder_exclude_patterns": [ ".git" ]
+        }
+    ],
+    "settings":
+     {
+        "PyYapf":{
+         "yapf_command": "yapf",
+         "on_save": true
+        },
+        "project_environment": {
+            "env": {
+                "PYTHON": "/home/sheffler/sw/MambaForge/envs/mlb/bin/python"
+            }
+        }
+
+    },
+    "build_systems": [
+        {
+            "name": "runtest.py",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON lib/ipd/ipd/tools/run_tests_on_file.py mlb ipd $file &> ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "pyright",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -m pyright $file &> ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "pytest mlb",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -m pytest mlb/tests 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "pytest ipd",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -m pytest lib/ipd/ipd/tests 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "pytest mlb ipd",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -m pytest mlb/tests lib/ipd/ipd/tests 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "test import",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -c 'import mlb' 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "test mlbtool",
+            "shell_cmd": "cd $folder && PYTHONPATH=. \\$PYTHON -m mlb.frontend.cli 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "test server",
+            "shell_cmd": "cd $folder; PYTHONPATH=. \\$PYTHON mlb/tests/backend/test_server.py 2>&1 | tee $folder/ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "test dag",
+            "shell_cmd": "cd $folder; PYTHONPATH=. \\$PYTHON mlb/tests/test_dag.py 2>&1 | tee ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "test cli",
+            "shell_cmd": "sh $folder/ide/whs/test_cli.sh 2>&1 | tee $folder/ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "test crud",
+            "shell_cmd": "cd $folder/lib/ipd; PYTHONPATH=. \\$PYTHON ipd/tests/crud/test_crud.py 2>&1 | tee $folder/ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        },
+        {
+            "name": "test specs",
+            "shell_cmd": "cd $folder; PYTHONPATH=. \\$PYTHON mlb/tests/test_specifications.py 2>&1 | tee $folder/ide/sublime_build.log",
+            "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)"
+        }
+    ]
+}
